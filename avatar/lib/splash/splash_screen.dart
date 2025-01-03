@@ -9,16 +9,19 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
+    centered: true,
+      splashTransition: SplashTransition.fadeTransition,
+      animationDuration: Duration(seconds: 3),
       splash: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
             child: Padding(
-              
+
               padding: const EdgeInsets.all(8.0),
               child: Center(
-                child: Lottie.asset(
-                  'assets/animation/Animation - 1735902222159.json',
+                
+                child: Lottie.asset(LottieSplash().splash,
                   fit: BoxFit.contain,
                 ),
               ),
@@ -31,4 +34,7 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.white, // Adjust color as needed
     );
   }
+}
+class LottieSplash{
+  final splash='assets/animation/Animation - 1735902222159.json';
 }
