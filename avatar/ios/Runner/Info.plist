@@ -7,7 +7,7 @@
 		<key>CFBundleDisplayName</key>
 		<string>Avatar</string>
 		<key>NSCameraUsageDescription</key>
-        <string>Avatar oluşturmak için kamera izni gerekli</string>
+		<string>Avatar oluşturmak için kamera izni gerekli</string>
 		<key>CFBundleExecutable</key>
 		<string>$(EXECUTABLE_NAME)</string>
 		<key>CFBundleIdentifier</key>
